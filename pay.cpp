@@ -42,8 +42,7 @@ int readData(Person employees[], int size){
     cout << "Error: Could not open file." << endl;
   }
 
-  while(!file.eof()){
-    file >> fname;
+  while(file >> fname){
     file >> lname;
     file >> hours;
     file >> rate;
@@ -64,7 +63,7 @@ void writeData(Person employees[], int size){
   file.open("output.txt");
   int i = 0;
 
-  while(i < (size-1)){
+  while(i < size){
     file << employees[i].fullName() << " ";
     file << fixed << setprecision(2) << employees[i].totalPay();
     file << endl;
