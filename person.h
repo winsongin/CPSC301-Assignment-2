@@ -1,7 +1,7 @@
 // Author: Winson Gin
 // Course: CPSC 301 7-9:50pm
 // Date created: February 19, 2019
-// Last updated: February 28, 2019
+// Last updated: April 11, 2019
 //begin person.h
 #ifndef PERSON_H
 #define PERSON_H
@@ -16,7 +16,7 @@ private:
     float  payRate;
     float  hoursWorked;
 public:
-    Person();
+    Person(string fName, string lName, float rate, float hours);
     void setLastName(string lName);
     string getLastName();
     void setFirstName(string fName);

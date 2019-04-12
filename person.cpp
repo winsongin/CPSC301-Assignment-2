@@ -1,16 +1,16 @@
 // Author: Winson Gin
 // Course: CPSC 301 7-9:50pm
 // Date created: February 19, 2019
-// Last updated: February 28, 2019
+// Last updated: April 11, 2019
 #include <iostream>
 #include "person.h"
 #include <string>
 
-Person::Person(){
-  lastName = "";
-  firstName = "";
-  payRate = 0.0;
-  hoursWorked = 0.0;
+Person::Person(string fName, string lName, float rate, float hours){
+  firstName = fName;
+  lastName = lName;
+  payRate = rate;
+  hoursWorked = hours;
 }
 void Person::setLastName(string lName){
   lastName = lName;
