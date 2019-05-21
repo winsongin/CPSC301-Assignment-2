@@ -1,4 +1,4 @@
-# CPSC301-Assignment-2
+# payroll_calculator
 Winson Gin 
 
 CWID: 889214656
